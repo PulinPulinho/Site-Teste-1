@@ -1,0 +1,104 @@
+html{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 5%; float: bottom;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#container {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    
+}
+.imag{
+    max-height: 100%;
+    max-width: 100%;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    float: left;
+    
+}
+.card{
+    background-color: white;
+    flex: 1;
+    border-radius: 1%;
+}
+.card_info{
+    max-width: fit-content;
+    flex: 2;
+    padding-right: right;
+    float: left;
+    padding-left: 5%;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+.card_info h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 3.5vw;
+}
+.perfume{
+    font-family: 'Montserrat', serif;
+    font-size: 2vw;
+    font-weight: 0.1;
+    font-style: normal;
+    color: hsl(228, 12%, 48%);
+}
+.texto{
+    font-weight: 500;
+    font-size: 1.8vw;
+    color: hsl(228, 12%, 48%);
+}
+.preco_grande{
+    font-size: 3vw;
+    font-family: 'Fraunces', serif;
+    color: hsl(162, 93%, 35%);
+}
+.preco_pequeno{
+    font-family: 'Fraunces', serif;
+    font-size: 1vw;
+    margin-left: 10%;
+    margin-top: 27%;
+    color: hsl(228, 12%, 48%);
+    
+}
+
+.precos{
+    margin-top: none;
+    display: flex;
+}
+
+.botao{
+    border-style: none;
+    font-family: 'Montserrat', serif;
+    background-color: hsl(162, 93%, 35%);
+    color: white;
+    border: hsl(162, 93%, 35%);
+    display: block;
+    max-width: 100%;
+    padding: 10% 20%;
+    border-radius: 20px;
+    font-size: 1vw;
+    align-items: center;
+}
+.botao:hover{
+    background-color: hsl(162, 100%, 18%);
+    color: rgb(136, 136, 136);
+}
+
+@media screen and (max-width: 1780px){
+    .imag{
+        content: url(./images/image-product-mobile.jpg);
+        align-items: center;
+        justify-content: center;
+        border-radius: 1vw;
+        max-width: 100%;
+    }
+    .card_info{
+        align-items: center;
+        justify-content: center;
+    }
+}
